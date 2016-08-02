@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{ECA8099A-8210-46D0-94A9-2D8885A9087C}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Business.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
+    <AssemblyName>CrosslightAppiOS</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <AssemblyName>CrosslightAppiOS</AssemblyName>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchExtraArgs>--linkskip=System.Core --linkskip=mscorlib</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AssemblyName>CrosslightAppiOS</AssemblyName>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchExtraArgs>--linkskip=System.Core --linkskip=mscorlib</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <AssemblyName>CrosslightBusinessAppiOS</AssemblyName>
+    <IpaPackageName>
+    </IpaPackageName>
+    <MtouchArch>ARMv7, ARMv7s</MtouchArch>
+    <MtouchExtraArgs>--linkskip=System.Core --linkskip=mscorlib</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <AssemblyName>CrosslightBusinessAppiOS</AssemblyName>
+    <MtouchArch>ARMv7, ARMv7s</MtouchArch>
+    <MtouchExtraArgs>--linkskip=System.Core --linkskip=mscorlib</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+    <AssemblyName>CrosslightBusinessAppiOS</AssemblyName>
+    <MtouchArch>ARMv7, ARMv7s</MtouchArch>
+    <MtouchExtraArgs>--linkskip=System.Core --linkskip=mscorlib</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <AssemblyName>CrosslightBusinessAppiOS</AssemblyName>
+    <MtouchExtraArgs>--linkskip=System.Core --linkskip=mscorlib</MtouchExtraArgs>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchArch>ARMv7, ARMv7s</MtouchArch>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Infrastructure\AppInitializer.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Views\ItemCollectionViewCell.cs" />
+    <Compile Include="Views\ItemCollectionViewCell.designer.cs">
+      <DependentUpon>ItemCollectionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ItemCollectionViewHeader.cs" />
+    <Compile Include="Views\ItemCollectionViewHeader.designer.cs">
+      <DependentUpon>ItemCollectionViewHeader.cs</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewControllers\ItemCollectionViewController.cs" />
+    <Compile Include="ViewControllers\ItemCollectionViewController.designer.cs">
+      <DependentUpon>ItemCollectionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ItemEditViewController.cs" />
+    <Compile Include="ViewControllers\ItemEditViewController.designer.cs">
+      <DependentUpon>ItemEditViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ItemListViewController.cs" />
+    <Compile Include="ViewControllers\ItemListViewController.designer.cs">
+      <DependentUpon>ItemListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\PhotoDetailViewController.cs" />
+    <Compile Include="ViewControllers\PhotoDetailViewController.designer.cs">
+      <DependentUpon>PhotoDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\SimpleViewController.cs" />
+    <Compile Include="ViewControllers\AboutViewController.cs" />
+    <Compile Include="ViewControllers\AboutViewController.designer.cs">
+      <DependentUpon>AboutViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\SimpleViewController.designer.cs">
+      <DependentUpon>SimpleViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NavigationViewController.cs" />
+    <Compile Include="ViewControllers\MainDrawerViewController.cs" />
+    <Compile Include="ViewControllers\HomeViewController.cs" />
+    <Compile Include="ViewControllers\HomeViewController.designer.cs">
+      <DependentUpon>HomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\RegisterViewController.cs" />
+    <Compile Include="ViewControllers\UserProfileViewController.cs" />
+    <Compile Include="ViewControllers\UserSettingsViewController.cs" />
+    <Compile Include="ViewControllers\ChangePasswordViewController.cs" />
+    <InterfaceDefinition Include="Views\ItemCollectionViewCell.xib" />
+    <InterfaceDefinition Include="Views\ItemCollectionViewHeader.xib" />
+    <Compile Include="Views\DrawerHeaderTableView.cs" />
+    <Compile Include="Views\DrawerHeaderTableView.designer.cs">
+      <DependentUpon>DrawerHeaderTableView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\MainStoryboard.storyboard" />
+    <None Include="packages.config" />
+    <Compile Include="Views\DrawerFooterTableView.cs" />
+    <Compile Include="Views\DrawerFooterTableView.designer.cs">
+      <DependentUpon>DrawerFooterTableView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\DrawerFooterTableView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Intersoft.AppFramework, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=5ece42678189aa22">
+      <HintPath>..\packages\Intersoft.AppFramework.5.0.5000.543\lib\Intersoft.AppFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.543\lib\Xamarin.iOS10\Intersoft.Crosslight.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.iOS, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5">
+      <HintPath>..\packages\Intersoft.Crosslight.5.0.5000.543\lib\Xamarin.iOS10\Intersoft.Crosslight.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.PushNotification, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.543\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.PushNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.PushNotification.iOS, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.PushNotification.5.0.5000.543\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.PushNotification.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Social, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.543\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.Social.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Services.Social.iOS, Version=5.0.5000.1, Culture=neutral, PublicKeyToken=71f3e3261ac778b5">
+      <HintPath>..\packages\Intersoft.Crosslight.Services.Social.5.0.5000.543\lib\Xamarin.iOS10\Intersoft.Crosslight.Services.Social.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.543\lib\Intersoft.Crosslight.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.ComponentModel">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.5.0.5000.543\lib\Intersoft.Crosslight.Data.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.SQLite">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.543\lib\Xamarin.iOS10\Intersoft.Crosslight.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Intersoft.Crosslight.Data.SQLite.iOS">
+      <HintPath>..\packages\Intersoft.Crosslight.Data.Sqlite.5.0.5000.543\lib\Xamarin.iOS10\Intersoft.Crosslight.Data.SQLite.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\blue_check.png" />
+    <BundleResource Include="Resources\itemcell_frame%402x.png" />
+    <BundleResource Include="Resources\itemcell_frame.png" />
+    <BundleResource Include="Resources\item_placeholder%402x.png" />
+    <BundleResource Include="Resources\item_placeholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Views\DrawerHeaderTableView.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business.Core\Business.Core.csproj">
+      <Project>{3706856F-5BF4-4BEB-97F5-76724CF1902A}</Project>
+      <Name>Business.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Crosslight512.png" />
+    <BundleResource Include="Resources\home_bg.jpg" />
+    <BundleResource Include="Resources\headertile_bg.png" />
+    <BundleResource Include="Resources\drawer_bg.jpg" />
+    <BundleResource Include="Resources\facebook%402x.png" />
+    <BundleResource Include="Resources\facebook_blue%402x.png" />
+    <BundleResource Include="Resources\circle_placeholder%402x.png" />
+    <BundleResource Include="Resources\square_placeholder%402x.png" />
+    <BundleResource Include="Resources\circlenb_placeholder%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-60%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-72.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-72%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-76.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-76%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-50.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-50%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-40.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Icon-Small-40%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-568h%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-Portrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-Landscape.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-Portrait%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\Default-Landscape%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+  </ItemGroup>
+</Project>

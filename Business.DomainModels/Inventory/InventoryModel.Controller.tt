@@ -1,0 +1,17 @@
+<#@ template language="C#" debug="false" hostspecific="true"#>
+
+<#@ assembly name="Intersoft.Data.CodeGenerator.dll" #>
+<#@ import namespace="Intersoft.Data.CodeGenerator" #>
+
+<#@ output extension=".cs"#>
+
+<#
+const string inputFile = @"InventoryModel.edmx";
+DomainModelTemplateGenerator templateGenerator = new DomainModelTemplateGenerator(this, inputFile);
+#>
+
+<#=templateGenerator.GenerateController()#>
+
+<#
+templateGenerator.FinalizeController();
+#>
