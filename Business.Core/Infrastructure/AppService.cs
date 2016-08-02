@@ -47,7 +47,15 @@ namespace Business.Infrastructure
             // configure app settings
             AppSettings appSettings = new AppSettings();
             appSettings.SingleSignOnAppId = "Business";
-            appSettings.WebServerUrl = "http://192.168.0.16:63996";
+            //appSettings.WebServerUrl = "http://192.168.0.16:63996";
+            if (context.Platform.OperatingSystem == OSKind.Android)
+            {
+                appSettings.WebServerUrl = "http://169.254.80.80:63996";
+            }
+            else
+            {
+                appSettings.WebServerUrl = "http://169.254.56.1:63996";
+            }
             appSettings.BaseAppUrl = appSettings.WebServerUrl;
             appSettings.BaseImageUrl = appSettings.BaseAppUrl + "/images/";
             appSettings.RestServiceUrl = appSettings.BaseAppUrl + "/data/Inventory";
